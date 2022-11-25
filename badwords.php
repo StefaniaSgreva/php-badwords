@@ -1,5 +1,8 @@
 <?php 
 
+$text = $_GET['text'];
+$badword = $_GET['badword'];
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +14,8 @@
     <title>Bad Words</title>
 </head>
 <body>
+    <p><?php echo "Text: $text" ?></p>
+    <div><?php echo "word: $badword" ?></div>
     
 </body>
 </html>
