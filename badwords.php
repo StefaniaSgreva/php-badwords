@@ -1,7 +1,18 @@
 <?php 
+if(isset($_GET['text']) && $_GET['text'] != ''){
+    $text = $_GET['text'];
+} else {
+    $text = 'empty';
+};
 
-$text = $_GET['text'];
-$badword = $_GET['badword'];
+if(isset($_GET['badword']) && $_GET['badword'] != ''){
+    $badword = $_GET['badword'];
+} else {
+    $badword = 'empty';
+};
+
+// $text = $_GET['text'];
+// $badword = $_GET['badword'];
 
 ?>
 
@@ -15,7 +26,7 @@ $badword = $_GET['badword'];
 </head>
 <body>
     <p><?php echo "Text: $text" ?></p>
-    <div><?php echo "word: $badword" ?></div>
+    <div><?php echo "Word: $badword" ?></div>
     
 </body>
 </html>
